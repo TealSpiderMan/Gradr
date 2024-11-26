@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Title and Value Section -->
+    <LinearLayout
+        android:id="@+id/titleSection"
+        android:layout_width="442dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="TOTAL ASSET WORTH"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/valueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="MYR 144.38"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Most Valuable Section -->
+    <LinearLayout
+        android:id="@+id/mostValuableSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/titleSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/mostValuableTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Valuable Items"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/mostValuable1Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mew EX"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/mostValuable1Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MYR 90.66"
+                android:textAlignment="textEnd"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/mostValuable1Change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.54%"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/mostValuable2Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mew EX (Full Art)"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/mostValuable2Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MYR 48.26"
+                android:textAlignment="textEnd"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/mostValuable2Change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.73%"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/mostValuable3Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mew ex - 053"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/mostValuable3Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MYR 5.46"
+                android:textAlignment="textEnd"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/mostValuable3Change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.25%"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/viewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textColor="@color/blue"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+    <!-- Collections Section -->
+    <TextView
+        android:id="@+id/collectionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collections"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/mostValuableSection"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Bottom Navigation -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collectionsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/navigationBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/collectionsTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar_outline"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navHome"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:contentDescription="Home"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:id="@+id/navHomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navPortfolio"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:contentDescription="Portfolio"
+                android:src="@drawable/ic_portfolio" />
+
+            <TextView
+                android:id="@+id/navPortfolioText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portfolio"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

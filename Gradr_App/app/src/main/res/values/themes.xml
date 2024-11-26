@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.Gradr_App" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+        <item name="colorPrimary">@color/blue</item> <!-- Updated line -->
+        <item name="colorPrimaryDark">@color/blue</item> <!-- Updated line -->
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>
