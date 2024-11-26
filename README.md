@@ -1,3 +1,5 @@
+<img width="244" alt="Gradr_Logo" src="https://github.com/user-attachments/assets/21cb6899-ef80-4412-9022-aee5b0f1817d">
+
 # Gradr App
 
 Gradr is a mobile application designed for collectors to efficiently manage and track their collections. Whether you're into coins, stamps, Pokémon cards, or any other collectible items, Gradr offers an intuitive and customizable platform to keep your collections organized and accessible. 
