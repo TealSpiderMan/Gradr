@@ -66,10 +66,6 @@ Contributions are welcome! If you'd like to enhance Gradr or fix bugs, follow th
    ```
 5. Create a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - Adam Wathan and Steve Schoger's *Refactoring UI* for design inspiration.
