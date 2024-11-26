@@ -4,12 +4,16 @@ Gradr is a mobile application designed for collectors to efficiently manage and 
 
 ## Features
 
+![Home Page](images/image_2024-11-26_201622241.png)
+
 - **Collection Management**: Create and organize collections for different types of items.
 - **Portfolio View**: Display detailed information about individual items in your collections.
 - **User-Friendly Interface**: Modern UI designed for a seamless user experience.
 - **Customizable Collections**: Add personalized details and categorize items as needed.
 - **Future Expandability**: Incorporates feedback and ideas for continuous improvement.
 
+![My Portfolio](images/image_2024-11-26_201646611.png)
+![Item Description](images/image_2024-11-26_201658994.png)
 ## Motivation
 
 As a collector, the need for a tool to simplify collection tracking and management inspired the development of Gradr. This app reflects both a personal passion for collecting and a drive to create a functional tool for collectors worldwide.
